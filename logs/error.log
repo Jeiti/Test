@@ -1,0 +1,5 @@
+[Sun Mar 06 23:12:42.000820 2016] [:error] [pid 4463] [client 127.0.0.1:34035] PHP Fatal error:  Call to undefined function string() in /home/evgen/www/test/ind.php on line 12
+[Sun Mar 06 23:12:44.624279 2016] [:error] [pid 3824] [client 127.0.0.1:34040] PHP Fatal error:  Call to undefined function string() in /home/evgen/www/test/ind.php on line 12
+[Sun Mar 06 23:16:52.400707 2016] [:error] [pid 4463] [client 127.0.0.1:34542] PHP Notice:  Array to string conversion in /home/evgen/www/test/ind.php on line 11
+[Sun Mar 06 23:16:52.400767 2016] [:error] [pid 4463] [client 127.0.0.1:34542] PHP Notice:  Array to string conversion in /home/evgen/www/test/ind.php on line 11
+[Sun Mar 06 23:17:19.641982 2016] [:error] [pid 3824] [client 127.0.0.1:34597] PHP Notice:  Undefined variable: key3 in /home/evgen/www/test/ind.php on line 11
