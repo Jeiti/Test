@@ -30,5 +30,5 @@ if(preg_match($str_prov, $str, $matches)){
     print_r($matches);
 }
 else{
-    echo "FAIL";
+    echo "FAIL1";
 }
