@@ -3,3 +3,108 @@
 [Sun Mar 06 23:16:52.400707 2016] [:error] [pid 4463] [client 127.0.0.1:34542] PHP Notice:  Array to string conversion in /home/evgen/www/test/ind.php on line 11
 [Sun Mar 06 23:16:52.400767 2016] [:error] [pid 4463] [client 127.0.0.1:34542] PHP Notice:  Array to string conversion in /home/evgen/www/test/ind.php on line 11
 [Sun Mar 06 23:17:19.641982 2016] [:error] [pid 3824] [client 127.0.0.1:34597] PHP Notice:  Undefined variable: key3 in /home/evgen/www/test/ind.php on line 11
+[Wed Mar 23 15:57:59.767298 2016] [:error] [pid 1960] [client 127.0.0.1:39156] PHP Warning:  preg_match(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 39
+[Wed Mar 23 15:57:59.785029 2016] [:error] [pid 1960] [client 127.0.0.1:39156] PHP Warning:  preg_replace(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 42
+[Wed Mar 23 15:58:02.288202 2016] [:error] [pid 1960] [client 127.0.0.1:39156] PHP Warning:  preg_match(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 39
+[Wed Mar 23 15:58:02.288256 2016] [:error] [pid 1960] [client 127.0.0.1:39156] PHP Warning:  preg_replace(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 42
+[Wed Mar 23 16:01:29.625800 2016] [:error] [pid 1960] [client 127.0.0.1:39605] PHP Notice:  Undefined variable: matches in /home/evgen/www/test/index.php on line 40
+[Wed Mar 23 16:07:02.690837 2016] [:error] [pid 1958] [client 127.0.0.1:40416] PHP Warning:  preg_match(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 41
+[Wed Mar 23 16:07:02.690901 2016] [:error] [pid 1958] [client 127.0.0.1:40416] PHP Warning:  preg_replace(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 44
+[Fri Mar 25 15:09:49.080525 2016] [:error] [pid 1910] [client 127.0.0.1:34575] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 41
+[Fri Mar 25 15:11:02.211396 2016] [:error] [pid 1916] [client 127.0.0.1:34725] PHP Notice:  Use of undefined constant pattern - assumed 'pattern' in /home/evgen/www/test/index.php on line 41
+[Fri Mar 25 15:13:57.273118 2016] [:error] [pid 1913] [client 127.0.0.1:35085] PHP Warning:  preg_match(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 40
+[Fri Mar 25 15:13:57.273177 2016] [:error] [pid 1913] [client 127.0.0.1:35085] PHP Warning:  preg_replace(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 43
+[Fri Mar 25 15:13:58.438053 2016] [:error] [pid 1913] [client 127.0.0.1:35085] PHP Warning:  preg_match(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 40
+[Fri Mar 25 15:13:58.438105 2016] [:error] [pid 1913] [client 127.0.0.1:35085] PHP Warning:  preg_replace(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 43
+[Fri Mar 25 15:59:41.051551 2016] [:error] [pid 1913] [client 127.0.0.1:40867] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 41
+[Fri Mar 25 21:16:26.138111 2016] [:error] [pid 1913] [client 127.0.0.1:53904] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:16:46.296825 2016] [:error] [pid 1916] [client 127.0.0.1:53949] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:17:07.875153 2016] [:error] [pid 3043] [client 127.0.0.1:54019] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:17:09.596546 2016] [:error] [pid 1910] [client 127.0.0.1:54024] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:17:10.747997 2016] [:error] [pid 1911] [client 127.0.0.1:54027] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:17:31.811469 2016] [:error] [pid 1912] [client 127.0.0.1:54073] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:17:32.614331 2016] [:error] [pid 1913] [client 127.0.0.1:54076] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 21:17:33.378232 2016] [:error] [pid 1916] [client 127.0.0.1:54079] PHP Parse error:  syntax error, unexpected '<' in /home/evgen/www/test/index.php on line 36
+[Fri Mar 25 22:11:56.597818 2016] [:error] [pid 1910] [client 127.0.0.1:33337] PHP Parse error:  syntax error, unexpected 'preg_match_all' (T_STRING) in /home/evgen/www/test/index.php on line 41
+[Fri Mar 25 22:16:35.366451 2016] [:error] [pid 1916] [client 127.0.0.1:33933] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 58
+[Fri Mar 25 22:16:47.136110 2016] [:error] [pid 3043] [client 127.0.0.1:33958] PHP Notice:  Undefined offset: 1 in /home/evgen/www/test/index.php on line 58
+[Fri Mar 25 22:24:33.675572 2016] [:error] [pid 1911] [client 127.0.0.1:34902] PHP Parse error:  syntax error, unexpected end of file in /home/evgen/www/test/index.php on line 74
+[Fri Mar 25 22:25:16.431126 2016] [:error] [pid 1912] [client 127.0.0.1:34989] PHP Parse error:  syntax error, unexpected end of file in /home/evgen/www/test/index.php on line 74
+[Fri Mar 25 22:25:36.912988 2016] [:error] [pid 1913] [client 127.0.0.1:35031] PHP Parse error:  syntax error, unexpected end of file in /home/evgen/www/test/index.php on line 74
+[Fri Mar 25 22:31:35.948725 2016] [:error] [pid 1911] [client 127.0.0.1:35860] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:31:54.132297 2016] [:error] [pid 1912] [client 127.0.0.1:35897] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:33:06.804471 2016] [:error] [pid 1916] [client 127.0.0.1:36047] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:33:16.295830 2016] [:error] [pid 3043] [client 127.0.0.1:36068] PHP Notice:  Undefined offset: 1 in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:33:21.777082 2016] [:error] [pid 1910] [client 127.0.0.1:36081] PHP Notice:  Undefined offset: 1 in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:33:31.179668 2016] [:error] [pid 1911] [client 127.0.0.1:36102] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:33:40.265613 2016] [:error] [pid 1912] [client 127.0.0.1:36121] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Fri Mar 25 22:43:42.821178 2016] [:error] [pid 3043] [client 127.0.0.1:37367] PHP Warning:  preg_match_all(): Unknown modifier 'g' in /home/evgen/www/test/index.php on line 79
+[Fri Mar 25 22:58:49.747603 2016] [:error] [pid 1912] [client 127.0.0.1:39280] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 22:58:50.969925 2016] [:error] [pid 1913] [client 127.0.0.1:39283] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 22:58:51.937634 2016] [:error] [pid 1916] [client 127.0.0.1:39286] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 22:59:50.085510 2016] [:error] [pid 3043] [client 127.0.0.1:39405] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 22:59:51.651905 2016] [:error] [pid 1910] [client 127.0.0.1:39410] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 22:59:52.660514 2016] [:error] [pid 1911] [client 127.0.0.1:39413] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 22:59:53.515013 2016] [:error] [pid 1912] [client 127.0.0.1:39414] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 23:00:12.053935 2016] [:error] [pid 1913] [client 127.0.0.1:39453] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 23:00:13.069863 2016] [:error] [pid 1916] [client 127.0.0.1:39456] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 23:00:13.981967 2016] [:error] [pid 3043] [client 127.0.0.1:39459] PHP Fatal error:  Call to undefined function echoreadfile() in /home/evgen/www/test/index.php on line 94
+[Fri Mar 25 23:06:22.254284 2016] [:error] [pid 1913] [client 127.0.0.1:40252] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:06:36.465807 2016] [:error] [pid 1916] [client 127.0.0.1:40281] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 57
+[Fri Mar 25 23:09:14.582606 2016] [:error] [pid 3043] [client 127.0.0.1:40600] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:10:00.200275 2016] [:error] [pid 1910] [client 127.0.0.1:40695] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:10:00.966008 2016] [:error] [pid 1910] [client 127.0.0.1:40695] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:10:08.463020 2016] [:error] [pid 1911] [client 127.0.0.1:40712] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:10:29.239390 2016] [:error] [pid 1912] [client 127.0.0.1:40755] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:10:51.807390 2016] [:error] [pid 1913] [client 127.0.0.1:40805] PHP Warning:  preg_match_all() expects parameter 2 to be string, resource given in /home/evgen/www/test/index.php on line 56
+[Fri Mar 25 23:13:20.648471 2016] [:error] [pid 1916] [client 127.0.0.1:41107] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 55
+[Fri Mar 25 23:13:20.648523 2016] [:error] [pid 1916] [client 127.0.0.1:41107] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /home/evgen/www/test/index.php on line 57
+[Fri Mar 25 23:13:33.135973 2016] [:error] [pid 3043] [client 127.0.0.1:41134] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /home/evgen/www/test/index.php on line 57
+[Fri Mar 25 23:15:17.555720 2016] [:error] [pid 1910] [client 127.0.0.1:41349] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /home/evgen/www/test/index.php on line 58
+[Fri Mar 25 23:15:17.555775 2016] [:error] [pid 1910] [client 127.0.0.1:41349] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /home/evgen/www/test/index.php on line 58
+[Fri Mar 25 23:15:17.555792 2016] [:error] [pid 1910] [client 127.0.0.1:41349] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /home/evgen/www/test/index.php on line 58
+[Fri Mar 25 23:15:17.555808 2016] [:error] [pid 1910] [client 127.0.0.1:41349] PHP Warning:  preg_match_all() expects parameter 2 to be string, array given in /home/evgen/www/test/index.php on line 58
+[Sat Mar 26 09:13:41.850788 2016] [:error] [pid 1912] [client 127.0.0.1:58126] PHP Notice:  Undefined variable: a in /home/evgen/www/test/index.php on line 58
+[Sat Mar 26 09:14:19.564569 2016] [:error] [pid 1913] [client 127.0.0.1:58202] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/evgen/www/test/index.php on line 59
+[Sat Mar 26 09:14:28.220903 2016] [:error] [pid 1916] [client 127.0.0.1:58221] PHP Notice:  Undefined variable: a in /home/evgen/www/test/index.php on line 58
+[Sat Mar 26 09:14:52.355975 2016] [:error] [pid 1918] [client 127.0.0.1:58270] PHP Notice:  Undefined variable: a in /home/evgen/www/test/index.php on line 58
+[Sat Mar 26 09:20:42.960873 2016] [:error] [pid 1911] [client 127.0.0.1:59087] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 136 in /home/evgen/www/test/index.php on line 65
+[Sat Mar 26 09:53:21.281493 2016] [:error] [pid 1911] [client 127.0.0.1:34872] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 0 in /home/evgen/www/test/index.php on line 71
+[Sat Mar 26 09:53:22.776026 2016] [:error] [pid 1911] [client 127.0.0.1:34872] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 0 in /home/evgen/www/test/index.php on line 71
+[Sat Mar 26 09:53:23.527642 2016] [:error] [pid 1911] [client 127.0.0.1:34872] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 0 in /home/evgen/www/test/index.php on line 71
+[Sat Mar 26 09:54:11.371040 2016] [:error] [pid 1912] [client 127.0.0.1:34973] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 0 in /home/evgen/www/test/index.php on line 71
+[Sat Mar 26 09:54:12.289635 2016] [:error] [pid 1912] [client 127.0.0.1:34973] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 0 in /home/evgen/www/test/index.php on line 71
+[Sat Mar 26 09:54:13.073228 2016] [:error] [pid 1912] [client 127.0.0.1:34973] PHP Warning:  preg_match_all(): Compilation failed: nothing to repeat at offset 0 in /home/evgen/www/test/index.php on line 71
+[Sat Mar 26 20:08:32.257563 2016] [:error] [pid 1912] [client 127.0.0.1:52805] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/evgen/www/test/index.php on line 57
+[Sat Mar 26 20:08:34.117016 2016] [:error] [pid 1913] [client 127.0.0.1:52810] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in /home/evgen/www/test/index.php on line 57
+[Sat Mar 26 20:29:12.363059 2016] [:error] [pid 1918] [client 127.0.0.1:55319] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Sat Mar 26 20:29:23.508365 2016] [:error] [pid 3105] [client 127.0.0.1:55342] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Sat Mar 26 20:29:24.377645 2016] [:error] [pid 3105] [client 127.0.0.1:55342] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Sat Mar 26 20:29:52.739851 2016] [:error] [pid 1912] [client 127.0.0.1:55402] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 64
+[Sun Mar 27 00:54:10.163289 2016] [:error] [pid 3105] [client 127.0.0.1:59456] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:54:11.233297 2016] [:error] [pid 3105] [client 127.0.0.1:59456] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:54:18.955730 2016] [:error] [pid 1911] [client 127.0.0.1:59475] PHP Notice:  Array to string conversion in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:54:30.405124 2016] [:error] [pid 1912] [client 127.0.0.1:59500] PHP Warning:  preg_match(): Delimiter must not be alphanumeric or backslash in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:54:31.690910 2016] [:error] [pid 1912] [client 127.0.0.1:59500] PHP Warning:  preg_match(): Delimiter must not be alphanumeric or backslash in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:54:38.812696 2016] [:error] [pid 1913] [client 127.0.0.1:59518] PHP Warning:  preg_match(): Delimiter must not be alphanumeric or backslash in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:54:40.658933 2016] [:error] [pid 1913] [client 127.0.0.1:59518] PHP Warning:  preg_match(): Delimiter must not be alphanumeric or backslash in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:55:32.956696 2016] [:error] [pid 1916] [client 127.0.0.1:59629] PHP Warning:  preg_match(): No ending delimiter '$' found in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:55:33.771978 2016] [:error] [pid 1916] [client 127.0.0.1:59629] PHP Warning:  preg_match(): No ending delimiter '$' found in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:55:34.588699 2016] [:error] [pid 1916] [client 127.0.0.1:59629] PHP Warning:  preg_match(): No ending delimiter '$' found in /home/evgen/www/test/index.php on line 81
+[Sun Mar 27 00:57:43.146562 2016] [:error] [pid 1911] [client 127.0.0.1:59895] PHP Warning:  preg_match(): Delimiter must not be alphanumeric or backslash in /home/evgen/www/test/index.php on line 82
+[Sun Mar 27 00:58:01.873565 2016] [:error] [pid 1912] [client 127.0.0.1:59934] PHP Warning:  preg_match(): Delimiter must not be alphanumeric or backslash in /home/evgen/www/test/index.php on line 83
+[Wed Mar 30 11:30:50.490969 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523289 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523320 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523333 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523346 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523358 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523370 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523383 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523395 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:30:50.523407 2016] [:error] [pid 1920] [client 127.0.0.1:44633] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:31:33.357641 2016] [:error] [pid 1921] [client 127.0.0.1:44720] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:31:33.357719 2016] [:error] [pid 1921] [client 127.0.0.1:44720] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:31:34.699351 2016] [:error] [pid 1921] [client 127.0.0.1:44720] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:31:34.699398 2016] [:error] [pid 1921] [client 127.0.0.1:44720] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
+[Wed Mar 30 11:51:24.271185 2016] [:error] [pid 1922] [client 127.0.0.1:47133] PHP Warning:  imagepng(): Unable to open '/home/evgen/test.png' for writing: Permission denied in /home/evgen/www/test/graphics.php on line 16
