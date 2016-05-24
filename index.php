@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/html; charset=utf-8");
+header("Content-type:text/html; charset=utf-8");
 
 /*
 $stroka = "      We learn HTML. HTML is used for sites! HTML is good.";
@@ -47,7 +47,7 @@ while($pos=strpos(trim($stroka), "HTML", $pos+1)) {
 */
 
 //-------------------------------------------------------------------------------------------------
-    $str = file_get_contents("info.txt");
+/*    $str = file_get_contents("info.txt");
     echo "Строка из файла";
     echo "<br>";
     print_r($str);
@@ -74,9 +74,13 @@ while($pos=strpos(trim($stroka), "HTML", $pos+1)) {
     echo "<br>";
 
     for ($i = 0; $i < 2; $i++) {
-        ?>
+        /*?/*>
         <p class="blue" style="background-color: aqua"><?php echo $matches[0][$i] . "<br>"; ?></p>
         <?php
 
     }
+//---------------------------------------------------------------------------------------------------
+*/
+
 ?>
+

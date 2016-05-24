@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <img src="graphics.php">
+    <div class="test">Test 1</div>
+    <div class="test">Test 2</div>
+    <div class="test">Test 3</div>
+
+    <script type="text/javascript">
+/*        var test = $('.test');
+        for (var i = 0; i< test.length; i++){
+            test.get(i).style.color = 'green';
+            setTimeout("$('.test').get(0).style.color = 'red'", 2000);
+        };*/
+        $(document).ready(function(){
+            setTimeout("$('.test').get(1).style.color='brown'",2000);
+        });
+    </script>
+
+    <ul>
+        <li>Строка 1</li>
+        <li>Строка 2</li>
+        <li>Строка 3</li>
+        <li>Строка 4</li>
+    </ul>
+
 </body>
 </html>

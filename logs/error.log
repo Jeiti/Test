@@ -108,3 +108,29 @@
 [Wed Mar 30 11:31:34.699351 2016] [:error] [pid 1921] [client 127.0.0.1:44720] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
 [Wed Mar 30 11:31:34.699398 2016] [:error] [pid 1921] [client 127.0.0.1:44720] PHP Notice:  Undefined variable: mtches in /home/evgen/www/test/index.php on line 79
 [Wed Mar 30 11:51:24.271185 2016] [:error] [pid 1922] [client 127.0.0.1:47133] PHP Warning:  imagepng(): Unable to open '/home/evgen/test.png' for writing: Permission denied in /home/evgen/www/test/graphics.php on line 16
+[Sat Apr 09 09:28:32.486448 2016] [:error] [pid 3059] [client 127.0.0.1:48891] script '/home/evgen/www/test/ajax_index.php' not found or unable to stat
+[Fri Apr 29 21:13:54.682291 2016] [:error] [pid 6830] [client 127.0.0.1:33101] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:14:15.451874 2016] [:error] [pid 6831] [client 127.0.0.1:33144] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:14:38.053065 2016] [:error] [pid 6838] [client 127.0.0.1:33189] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:14:38.953962 2016] [:error] [pid 6838] [client 127.0.0.1:33189] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:27:25.209490 2016] [:error] [pid 6839] [client 127.0.0.1:34734] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:28:14.811651 2016] [:error] [pid 6840] [client 127.0.0.1:34837] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:28:54.591613 2016] [:error] [pid 6828] [client 127.0.0.1:34918] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:32:01.824258 2016] [:error] [pid 6827] [client 127.0.0.1:35295] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:34:14.776189 2016] [:error] [pid 6829] [client 127.0.0.1:35563] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:34:30.347967 2016] [:error] [pid 6830] [client 127.0.0.1:35594] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:34:40.804821 2016] [:error] [pid 6831] [client 127.0.0.1:35617] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:36:51.210013 2016] [:error] [pid 6838] [client 127.0.0.1:35889] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:37:23.798016 2016] [:error] [pid 6840] [client 127.0.0.1:35957] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:39:25.025763 2016] [:error] [pid 6839] [client 127.0.0.1:36208] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:40:59.474170 2016] [:error] [pid 6840] [client 127.0.0.1:36401] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:42:01.196322 2016] [:error] [pid 6827] [client 127.0.0.1:36528] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:59:29.758387 2016] [:error] [pid 6829] [client 127.0.0.1:38639] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:59:31.006493 2016] [:error] [pid 6829] [client 127.0.0.1:38639] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 21:59:32.002643 2016] [:error] [pid 6829] [client 127.0.0.1:38639] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4
+[Fri Apr 29 22:00:33.617127 2016] [:error] [pid 6827] [client 127.0.0.1:38772] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4, referer: http://test.loc/ajax_index.html
+[Fri Apr 29 22:01:33.376372 2016] [:error] [pid 6829] [client 127.0.0.1:38904] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4, referer: http://test.loc/ajax_index.html
+[Fri Apr 29 22:01:36.498961 2016] [:error] [pid 6829] [client 127.0.0.1:38904] PHP Notice:  Undefined index: id in /home/evgen/www/test/ajax.php on line 4, referer: http://test.loc/ajax_index.html
+[Fri Apr 29 22:06:40.021755 2016] [:error] [pid 6830] [client 127.0.0.1:39535] PHP Warning:  Illegal offset type in /home/evgen/www/test/ajax.php on line 7, referer: http://test.loc/ajax_index.html
+[Fri Apr 29 22:06:40.021811 2016] [:error] [pid 6830] [client 127.0.0.1:39535] PHP Fatal error:  Unsupported operand types in /home/evgen/www/test/ajax.php on line 7, referer: http://test.loc/ajax_index.html
+[Sat May 21 06:58:23.268213 2016] [:error] [pid 2987] [client 127.0.0.1:36278] PHP Parse error:  syntax error, unexpected '?' in /home/evgen/www/test/index.php on line 77
