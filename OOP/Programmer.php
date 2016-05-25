@@ -1,12 +1,18 @@
 <?php
 header("content-type: text/html; charset=utf-8");
+require_once ("Professional.php");
 class Person {
     private $fio;//-это инкапсуляция, т.е. доступ к свойству извне закрыт, для этого необходимо использовать getter, у которого внутри как правило return
     //так же она(инкапсуляция) нужна для обработки введенных некорректных данных
+    static private $count=0;//статическое св-во, оно вызывается только через ClassName::св-во//Todo: почитать дополнительно NEW
     protected $age;
     public function __construct($_fio){
         $this->fio=ucfirst($_fio);//$this->fio - это мы устанавливает приватному(любому) свойству полученные данные конструктором
         $this->age=5;//значения по умолчанию нужно устанавливать в конструкторе
+        self::$count++;//подсчет количества объявленных объектов//TODO: NEW
+    }
+    static function getCount(){
+        return self::$count;
     }
     public function getFio() {//getter - нужна для получения приватного свойства и передачи его наружу
         return $this->fio;
@@ -27,25 +33,27 @@ $a=new Person("vasya");//-это мы передаем строку в конс�
 echo $a->getFio();//получаем результат из getFio в котором возвращается значение приватного св-ва private $fio;
 $a->setAge(15);
 echo $a->getAge();
+
 echo $a;//выводит результат __toString;
 echo "<br>";
 echo "<br>";
 echo "<br>";
 class Programmer extends Person {
+    use Professional;//механизм как бы наследования класса Professional(TRAIT)//todo:почитать про это еще NEW
+
     public $langs=[];
 
     public function __construct($_fio, $_langs) {
         parent::__construct($_fio);//передаем в класс родителя в приватное св-во $fio + это пример наследования
         $this->langs=$_langs;
         $this->age=19;
+        $this->profession="программистъ";
     }
 
-    public function __toString()//todo: вывести все языки программирования которые он знает
-    {
-        return parent::__toString() . " я программист и знаю следующие языки программирования: " . implode(", ",$this->langs) . ";";
+    public function __toString() {
+        return parent::__toString() . " я $this->profession и знаю следующие языки программирования: " . implode(", ",$this->langs) . ";";
     }
 
-    //todo: добавить методы - удалить последний язык программирорвания и удалить язык программирования по индексу
     public function addLang($_lang) {
         array_push($this->langs,$_lang);
     }
@@ -56,6 +64,7 @@ class Programmer extends Person {
         {
             $_deletedLangPosition = array_search($_deletedLang, $this->langs);//находим этот элемент и возвращаем его индекс
             unset($this->langs[$_deletedLangPosition]);//удаляем элемент массива
+            sort($this->langs);
         }
         else
         {
@@ -79,15 +88,16 @@ $misha->setAge(23);
 echo $misha;//Вызывается метод __toString
 $misha->addLang("python");
 echo "<br>";
-$misha->removeLang("jjp");
+$misha->removeLang("c#");
 echo "<br>";
 print_r($misha->langs);
 echo "<br>";
 echo "<br>";
 echo "<br>";
-//todo: реализовать класс веб-дизайнер, наследовать от человека, определить какие графические редакторы знает (в виде массива)
-class webDesigner extends Person
+class WebDesigner extends Person//shift+F6 - рефакторинг//TODO: почитать про рефакторинг NEW
 {
+    use Professional;
+
     public $graphProgramms=[];
 
      public function __construct($_fio, $_graphProgramms)
@@ -96,28 +106,27 @@ class webDesigner extends Person
          $this->graphProgramms=$_graphProgramms;
      }
 
-    public function getFio()
-    {
-        return parent::getFio();
-    }
     public function getGraphProgramms()
     {
         return $this->graphProgramms;
     }
 }
 
-$vasya=new webDesigner("vasily",["photoshop","coreldraw","3dMax"]);
+$vasya=new WebDesigner("vasily",["photoshop","coreldraw","3dMax"]);
 echo $vasya->getFio();
 echo "<br>";
 print_r($vasya->getGraphProgramms());
 echo "<br>";
 echo "<br>";
 echo "<br>";
-//todo: реализовать класс веб-программист, и унаследовать его от программиста, добавить метод deploy-т.е. развертывание
-class webProgrammer extends Programmer
+class WebProgrammer extends Programmer
 {
     public function deploy()
     {
-
+        echo "развёртываю";
     }
 }
+
+$petya = new WebProgrammer("petya",["html","css","js"]);
+
+echo Person::getCount();
