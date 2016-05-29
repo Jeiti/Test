@@ -1,7 +1,9 @@
 <?php
 header("content-type: text/html; charset=utf-8");
 require_once ("Professional.php");
-class Person {
+require_once("Employable.php");
+require_once ("Freelanceble.php");
+abstract class Person {
     private $fio;//-это инкапсуляция, т.е. доступ к свойству извне закрыт, для этого необходимо использовать getter, у которого внутри как правило return
     //так же она(инкапсуляция) нужна для обработки введенных некорректных данных
     static private $count=0;//статическое св-во, оно вызывается только через ClassName::св-во//Todo: почитать дополнительно NEW
@@ -20,6 +22,7 @@ class Person {
     public function setAge($_age) {//setter - нужна для контролируемой установки значений приватным свойствам
         if($_age>0) {
             $this->age=$_age;//доступ к private $age и установка этому свойству $_age переданное из вызова $a->setAge(15);
+            //TODO:ДЗ - создать исключение PersonException и выбрасывать его, если возраст <=0
         }
     }
     public function getAge() {
@@ -28,17 +31,19 @@ class Person {
     public function __toString() {
         return "Меня зовут - $this->fio, мне - $this->age";
     }
+    abstract public function think();//создание абстрактного метода//TODO: NEW
+
 }
-$a=new Person("vasya");//-это мы передаем строку в конструктор
+/*$a=new Person("vasya");//-это мы передаем строку в конструктор
 echo $a->getFio();//получаем результат из getFio в котором возвращается значение приватного св-ва private $fio;
 $a->setAge(15);
 echo $a->getAge();
 
-echo $a;//выводит результат __toString;
+echo $a;//выводит результат __toString;*/
 echo "<br>";
 echo "<br>";
 echo "<br>";
-class Programmer extends Person {
+class Programmer extends Person implements Employable,Freelanceble{//implements Employable-это реализация интерфейса Employable//TODO:NEW
     use Professional;//механизм как бы наследования класса Professional(TRAIT)//todo:почитать про это еще NEW
 
     public $langs=[];
@@ -75,9 +80,18 @@ class Programmer extends Person {
     public function setAge($_age)//-это пример полиморфизма (множественное поведение), т.е. можем переопределять поведение в дочерних классах (в Programmer)
         //выполнение функции происходить может по другому чем у родителя
     {
-        if($_age>18) {
+        if($_age>18) {//TODO:ДЗ - создать исключение ProgrammerException, унаследовать от PersonException и выбрасывать его, если возраст <=18
             $this->age=$_age;
         }
+    }
+    public function think(){
+        echo "думает как программист";
+    }
+    public function passInterview(){
+        echo "прошел собеседование на программиста";
+    }
+    public function remoteJob(){
+        echo "тружусь удаленно программистом";
     }
 }
 
@@ -94,7 +108,7 @@ print_r($misha->langs);
 echo "<br>";
 echo "<br>";
 echo "<br>";
-class WebDesigner extends Person//shift+F6 - рефакторинг//TODO: почитать про рефакторинг NEW
+class WebDesigner extends Person implements Employable//shift+F6 - рефакторинг//TODO: почитать про рефакторинг NEW
 {
     use Professional;
 
@@ -109,6 +123,16 @@ class WebDesigner extends Person//shift+F6 - рефакторинг//TODO: по�
     public function getGraphProgramms()
     {
         return $this->graphProgramms;
+    }
+    public function think(){//обязательно вызов абстрактного методо//TODO: NEW
+        echo "думает как дизайнер";
+    }
+    public function passInterview(){
+        echo "прошел собеседование на веб-дизайнера";
+    }
+    public function __toString()
+    {
+        return parent::__toString();
     }
 }
 
