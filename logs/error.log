@@ -134,3 +134,4 @@
 [Fri Apr 29 22:06:40.021755 2016] [:error] [pid 6830] [client 127.0.0.1:39535] PHP Warning:  Illegal offset type in /home/evgen/www/test/ajax.php on line 7, referer: http://test.loc/ajax_index.html
 [Fri Apr 29 22:06:40.021811 2016] [:error] [pid 6830] [client 127.0.0.1:39535] PHP Fatal error:  Unsupported operand types in /home/evgen/www/test/ajax.php on line 7, referer: http://test.loc/ajax_index.html
 [Sat May 21 06:58:23.268213 2016] [:error] [pid 2987] [client 127.0.0.1:36278] PHP Parse error:  syntax error, unexpected '?' in /home/evgen/www/test/index.php on line 77
+[Sat Jun 04 09:23:34.140981 2016] [:error] [pid 5621] [client 127.0.0.1:39606] PHP Catchable fatal error:  Object of class Manager could not be converted to string in /home/evgen/www/test/OOP/Company.php on line 32

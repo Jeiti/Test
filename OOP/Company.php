@@ -17,8 +17,11 @@ class Company
     }
 
     public function employ(Employable $employee){//TODO: использование ранее объявленного интерфейса, почитать про type-hint
+        /*    public function passInterview(){
+             echo "прошел собеседование на программиста";
+        }*/
         $employee->passInterview();
-        $this->employees->append($employee);
+        $this->employees->append($employee);//добавится объект класса (целиком) который реализует интерфейс Employable
     }
 
     public function __toString()
@@ -27,9 +30,11 @@ class Company
 
         for($i=$this->employees->getIterator(); $i->valid();$i->next()){//TODO: использование SPL -> ArrayIterator
             $str .= $i->current();
+            echo "<br>";
+            $i->current()->passInterview();
+            echo " toString <br>";
         }
 
         return $str;
     }
-
 }
