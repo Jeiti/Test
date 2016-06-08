@@ -21,8 +21,10 @@ abstract class Person {
     }
     public function setAge($_age) {//setter - нужна для контролируемой установки значений приватным свойствам
         if($_age>0) {
-            $this->age=$_age;//доступ к private $age и установка этому свойству $_age переданное из вызова $a->setAge(15);
-            //TODO:ДЗ - создать исключение PersonException и выбрасывать его, если возраст <=0
+            $this->age=$_age;
+        }
+        else{
+            throw new Exception("Age <= 0");
         }
     }
     public function getAge() {
@@ -45,24 +47,19 @@ echo "<br>";
 echo "<br>";
 class Programmer extends Person implements Employable,Freelanceble{//implements Employable-это реализация интерфейса Employable//TODO:NEW
     use Professional;//механизм как бы наследования класса Professional(TRAIT)//todo:почитать про это еще NEW
-
     public $langs=[];
-
     public function __construct($_fio, $_langs) {
         parent::__construct($_fio);//передаем в класс родителя в приватное св-во $fio + это пример наследования
         $this->langs=$_langs;
         $this->age=19;
         $this->profession="программистъ";
     }
-
     public function __toString() {
         return parent::__toString() . " я $this->profession и знаю следующие языки программирования: " . implode(", ",$this->langs) . ";";
     }
-
     public function addLang($_lang) {
         array_push($this->langs,$_lang);
     }
-
     public function removeLang($_deletedLang)//метод-удалить язык по названию
     {
         if(in_array($_deletedLang, $this->langs))//если существует такое значение в массиве
@@ -76,12 +73,15 @@ class Programmer extends Person implements Employable,Freelanceble{//implements 
             echo "<br>".$this->getFio()." не знает такого языка программирования!!!"."<br>";
         }
     }
-
-    public function setAge($_age)//-это пример полиморфизма (множественное поведение), т.е. можем переопределять поведение в дочерних классах (в Programmer)
+    public function setAge($_age)//-это пример полиморфизма (множественное поведение), т.е. можем переопределять поведение в дочерних
+        // классах (в Programmer)
         //выполнение функции происходить может по другому чем у родителя
     {
         if($_age>18) {//TODO:ДЗ - создать исключение ProgrammerException, унаследовать от PersonException и выбрасывать его, если возраст <=18
             $this->age=$_age;
+        }
+        else{
+            throw new Exception("Age <= 18");
         }
     }
     public function think(){
@@ -98,7 +98,7 @@ class Programmer extends Person implements Employable,Freelanceble{//implements 
 $misha=new Programmer("misha", ["php","c#","ruby"]);//Вызывается метод __construct с параметрами
 echo $misha->getFio();//-это пример наследования
 echo "<br>";
-$misha->setAge(23);
+/*$misha->setAge(15);*/
 echo $misha;//Вызывается метод __toString
 $misha->addLang("python");
 echo "<br>";
@@ -154,3 +154,10 @@ class WebProgrammer extends Programmer
 $petya = new WebProgrammer("petya",["html","css","js"]);
 
 echo Person::getCount();
+
+try{
+    $misha->setAge(-1);
+}
+catch(Exception $e){
+    echo "<br>Exception message: ".$e->getMessage();
+}

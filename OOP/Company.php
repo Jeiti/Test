@@ -11,7 +11,7 @@ require_once ("Programmer.php");
 class Company
 {
     public $employees;
-    public  function __construct()
+    public function __construct()
     {
         $this->employees = new ArrayObject([]);//TODO: использование SPL -> ArrayObject
     }
