@@ -46,6 +46,14 @@ class Man extends Person2 implements classInterface{
         parent::__construct();
         $this->fromInterface();
         echo "<br>";
+            if(self::$static != "new Static"){
+                throw new Exception("This is ERROR from TRY");
+            }
+            else{
+                echo "<br>";
+                echo "OK";
+                echo "<br>";
+            }
     }
     function __toString()
     {
@@ -63,16 +71,10 @@ function returnClassFunctions(Man $e){
     return "This text from function proverkaClass";
 }
 try{
-    if(Man::$static!="new Static"){
-        throw new Exception("This is ERROR from TRY");
-    }
-    else{
-        echo "<br>";
-        echo "OK";
-        echo "<br>";
-    }
+    $a=new Man("Prosto text");
 }
 catch (Exception $a){
+    echo "<br>";
     echo "This is Exception <br>";
     echo "Message: " . $a->getMessage() . "<br><br>";
 }

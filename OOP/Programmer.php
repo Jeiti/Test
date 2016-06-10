@@ -4,10 +4,10 @@ require_once ("Professional.php");
 require_once("Employable.php");
 require_once ("Freelanceble.php");
 abstract class Person {
+    protected $age;
     private $fio;//-это инкапсуляция, т.е. доступ к свойству извне закрыт, для этого необходимо использовать getter, у которого внутри как правило return
     //так же она(инкапсуляция) нужна для обработки введенных некорректных данных
     static private $count=0;//статическое св-во, оно вызывается только через ClassName::св-во//Todo: почитать дополнительно NEW
-    protected $age;
     public function __construct($_fio){
         $this->fio=ucfirst($_fio);//$this->fio - это мы устанавливает приватному(любому) свойству полученные данные конструктором
         $this->age=5;//значения по умолчанию нужно устанавливать в конструкторе
@@ -109,17 +109,14 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 class WebDesigner extends Person implements Employable//shift+F6 - рефакторинг//TODO: почитать про рефакторинг NEW
-{
-    use Professional;
+{use Professional;
 
     public $graphProgramms=[];
-
-     public function __construct($_fio, $_graphProgramms)
+    public function __construct($_fio, $_graphProgramms)
      {
          parent::__construct($_fio);
          $this->graphProgramms=$_graphProgramms;
      }
-
     public function getGraphProgramms()
     {
         return $this->graphProgramms;
@@ -150,10 +147,9 @@ class WebProgrammer extends Programmer
         echo "развёртываю";
     }
 }
-
 $petya = new WebProgrammer("petya",["html","css","js"]);
-
 echo Person::getCount();
+
 
 try{
     $misha->setAge(-1);

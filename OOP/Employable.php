@@ -8,5 +8,5 @@
  */
 interface Employable//набор возможностей, которые может реализовать класс//TODO:NEW
 {
-    public function passInterview();//объявление методов только как абстрактные метода без слова abstract//TODO:NEW
+    public function passInterview();//объявление методов только как абстрактные методы без слова abstract//TODO:NEW
 }

@@ -15,7 +15,6 @@ class Company
     {
         $this->employees = new ArrayObject([]);//TODO: использование SPL -> ArrayObject
     }
-
     public function employ(Employable $employee){//TODO: использование ранее объявленного интерфейса, почитать про type-hint
         /*    public function passInterview(){
              echo "прошел собеседование на программиста";
@@ -23,7 +22,6 @@ class Company
         $employee->passInterview();
         $this->employees->append($employee);//добавится объект класса (целиком) который реализует интерфейс Employable
     }
-
     public function __toString()
     {
         $str="";
