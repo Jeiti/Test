@@ -27,9 +27,10 @@ class Company
         $str="";
 
         for($i=$this->employees->getIterator(); $i->valid();$i->next()){//TODO: использование SPL -> ArrayIterator
-            $str .= $i->current();
+            $obj = $i->current();
+            $str .= $obj;//".=" равносильно echo $объект_класса(вызывается __toString переданного_класса)
             echo "<br>";
-            $i->current()->passInterview();
+            $obj->passInterview();
             echo " toString <br>";
         }
 
