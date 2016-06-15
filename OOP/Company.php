@@ -8,6 +8,12 @@ require_once ("Programmer.php");
  * Date: 29.05.16
  * Time: 8:48
  */
+
+//employ - работа
+//employee - сотрудник
+//employees - сотрудники
+//employable - трудоспособный
+//passInterview - прошел собеседование
 class Company
 {
     public $employees;

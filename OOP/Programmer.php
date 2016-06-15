@@ -1,8 +1,6 @@
 <?php
 header("content-type: text/html; charset=utf-8");
-require_once ("Professional.php");
-require_once("Employable.php");
-require_once ("Freelanceble.php");
+require_once ("config.php");
 abstract class Person {
     protected $age;
     private $fio;//-это инкапсуляция, т.е. доступ к свойству извне закрыт, для этого необходимо использовать getter, у которого внутри как правило return
@@ -147,9 +145,9 @@ class WebProgrammer extends Programmer
         echo "развёртываю";
     }
 }
+
 $petya = new WebProgrammer("petya",["html","css","js"]);
 echo Person::getCount();
-
 
 try{
     $misha->setAge(-1);

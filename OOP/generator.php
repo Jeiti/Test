@@ -28,4 +28,4 @@ function readFileNew($fileName) {
 $fileGenerator = readFile('test.php');
 
 foreach ($fileGenerator as $str)
-    echo $fileGenerator->current()."\n";
+    echo $str->current()."\n";
