@@ -212,3 +212,8 @@
 [Mon Jun 13 10:42:45.068415 2016] [:error] [pid 1595] [client 127.0.0.1:53950] PHP Catchable fatal error:  Method Manager::__toString() must return a string value in /home/evgen/www/test/OOP/Company.php on line 37
 [Mon Jun 13 10:42:47.020980 2016] [:error] [pid 1595] [client 127.0.0.1:53950] PHP Catchable fatal error:  Method Manager::__toString() must return a string value in /home/evgen/www/test/OOP/Company.php on line 37
 [Tue Jun 14 07:38:39.803321 2016] [:error] [pid 3258] [client 127.0.0.1:54232] PHP Notice:  Array to string conversion in /home/evgen/www/test/OOP/FreelanceProgrammer.php on line 27
+[Wed Jun 15 18:51:45.883676 2016] [:error] [pid 1687] [client 127.0.0.1:55421] PHP Notice:  Undefined variable: mas in /home/evgen/www/test/OOP/foreach.php on line 6
+[Wed Jun 15 18:51:45.883864 2016] [:error] [pid 1687] [client 127.0.0.1:55421] PHP Fatal error:  Call to a member function append() on a non-object in /home/evgen/www/test/OOP/foreach.php on line 6
+[Wed Jun 15 18:53:16.151171 2016] [:error] [pid 3135] [client 127.0.0.1:55458] PHP Warning:  Invalid argument supplied for foreach() in /home/evgen/www/test/OOP/generator.php on line 31
+[Wed Jun 15 18:54:21.491559 2016] [:error] [pid 1690] [client 127.0.0.1:55463] PHP Warning:  Invalid argument supplied for foreach() in /home/evgen/www/test/OOP/generator.php on line 16
+[Wed Jun 15 18:54:28.445227 2016] [:error] [pid 1688] [client 127.0.0.1:55464] PHP Warning:  Invalid argument supplied for foreach() in /home/evgen/www/test/OOP/generator.php on line 31

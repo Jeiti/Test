@@ -1,9 +1,11 @@
 <?php
 
-$arr = new ArrayObject([2,5,7,10]);
+$arr = new ArrayObject([2,5,7,9,1]);
+$mas = new ArrayObject();
 
-for($i=$arr->getIterator(); $i->valid(); $i->next()){
-    $a = $i->current();
+for ($i=$arr->getIterator();$i->valid();$i->next()){
+    $mas->append($i->current());
 }
 
-print_r($arr);
+echo "<pre>";
+    print_r($mas);
