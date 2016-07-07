@@ -49,6 +49,10 @@ class Programmer extends Person implements Employable,Freelanceble{//implements 
     public function __construct($_fio, $_langs) {
         parent::__construct($_fio);//передаем в класс родителя в приватное св-во $fio + это пример наследования
         $this->langs=$_langs;
+        //TODO: реализовать отдельный класс "Язык программирования" (CRUD) = уровень освоения +
+        //TODO: реализовать метод learn для программиста и потом этот метод перенести в язык +
+        // TODO: аналогично для метода forget
+
         $this->age=19;
         $this->profession="программистъ";
     }
