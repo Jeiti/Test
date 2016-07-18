@@ -46,6 +46,7 @@ echo "<br>";
 class Programmer extends Person implements Employable,Freelanceble{//implements Employable-это реализация интерфейса Employable//TODO:NEW
     use Professional;//механизм как бы наследования класса Professional(TRAIT)//todo:почитать про это еще NEW
     public $langs=[];
+
     public function __construct($_fio, $_langs) {
         parent::__construct($_fio);//передаем в класс родителя в приватное св-во $fio + это пример наследования
         $this->langs=$_langs;
