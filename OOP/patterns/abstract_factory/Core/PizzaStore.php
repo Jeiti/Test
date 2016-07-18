@@ -1,9 +1,9 @@
 <?php
-
+namespace Core;
 class PizzaStore
 {
-    private $name;
-    private $factory;
+    protected $name;
+    protected $factory;
 
     public function __construct($_name, SimpleFactory $_factory){
         $this->name=$_name;

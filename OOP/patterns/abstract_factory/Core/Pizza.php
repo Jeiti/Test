@@ -1,5 +1,5 @@
 <?php
-
+namespace Core;
 abstract class Pizza
 {
     protected $type;

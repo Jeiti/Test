@@ -1,5 +1,5 @@
 <?php
-
+namespace Core;
 class SimpleFactory
 {
     public function createPizza($_type){
