@@ -3,23 +3,15 @@
 class PizzaStore
 {
     private $name;
+    private $factory;
 
-    public function __construct($_name){
+    public function __construct($_name, SimpleFactory $_factory){
         $this->name=$_name;
+        $this->factory = $_factory;
     }
 
     public function orderPizza($_type){
-        $pizza = NULL;
-
-        if($_type == "Greek"){
-            $pizza = new GreekPizza();
-        }
-        elseif($_type == "Mozarella"){
-            $pizza = new MozarellaPizza();
-        }
-        elseif($_type == "Veggie"){
-            $pizza = new VeggiePizza();
-        }
+        $pizza = $this->factory->createPizza($_type);
         $pizza->prepare();
         $pizza->bake();
         $pizza->cut();

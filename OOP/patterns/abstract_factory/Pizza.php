@@ -1,7 +1,9 @@
 <?php
 
-class Pizza
+abstract class Pizza
 {
+    protected $type;
+
     public function prepare(){
         echo "prepare\n";
     }
@@ -18,8 +20,7 @@ class Pizza
         echo "box\n";
     }
 
-    public function __toString()
-    {
-        return "Вы заказали пиццу!!! )))\n";
+    public function __toString(){
+        return "Вы заказали пиццу типа - $this->type!!! ))) \n";
     }
 }
