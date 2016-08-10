@@ -220,3 +220,21 @@
 [Tue Jun 28 08:42:32.486468 2016] [:error] [pid 3837] [client 127.0.0.1:38140] PHP Fatal error:  Cannot use object of type ReflectionProperty as array in /home/evgen/www/test/OOP/reflection/test.php on line 18
 [Tue Jun 28 08:42:32.516864 2016] [:error] [pid 3837] [client 127.0.0.1:38140] PHP Stack trace:
 [Tue Jun 28 08:42:32.516928 2016] [:error] [pid 3837] [client 127.0.0.1:38140] PHP   1. {main}() /home/evgen/www/test/OOP/reflection/test.php:0
+[Wed Aug 03 20:39:19.106874 2016] [:error] [pid 1813] [client 127.0.0.1:54720] PHP Catchable fatal error:  Object of class Observer1 could not be converted to string in /home/evgen/www/test/OOP/patterns/observer/test.php on line 14
+[Wed Aug 03 20:39:19.193239 2016] [:error] [pid 1813] [client 127.0.0.1:54720] PHP Stack trace:
+[Wed Aug 03 20:39:19.193306 2016] [:error] [pid 1813] [client 127.0.0.1:54720] PHP   1. {main}() /home/evgen/www/test/OOP/patterns/observer/test.php:0
+[Wed Aug 03 20:39:19.193336 2016] [:error] [pid 1813] [client 127.0.0.1:54720] PHP   2. Journal->registerObserver() /home/evgen/www/test/OOP/patterns/observer/test.php:56
+[Wed Aug 03 20:44:31.529020 2016] [:error] [pid 1812] [client 127.0.0.1:54732] PHP Fatal error:  Cannot use [] for reading in /home/evgen/www/test/OOP/patterns/observer/test.php on line 14
+[Wed Aug 03 20:56:55.101678 2016] [:error] [pid 1811] [client 127.0.0.1:54750] PHP Catchable fatal error:  Object of class Observer1 could not be converted to string in /home/evgen/www/test/OOP/patterns/observer/test.php on line 28
+[Wed Aug 03 20:56:55.101759 2016] [:error] [pid 1811] [client 127.0.0.1:54750] PHP Stack trace:
+[Wed Aug 03 20:56:55.101775 2016] [:error] [pid 1811] [client 127.0.0.1:54750] PHP   1. {main}() /home/evgen/www/test/OOP/patterns/observer/test.php:0
+[Wed Aug 03 20:56:55.101789 2016] [:error] [pid 1811] [client 127.0.0.1:54750] PHP   2. Journal->notifyObserver() /home/evgen/www/test/OOP/patterns/observer/test.php:68
+[Wed Aug 03 21:07:37.702709 2016] [:error] [pid 1812] [client 127.0.0.1:54780] PHP Fatal error:  Class 'OOP\\observer\\Journal' not found in /home/evgen/www/test/OOP/patterns/observer/test.php on line 6
+[Wed Aug 03 21:07:37.702816 2016] [:error] [pid 1812] [client 127.0.0.1:54780] PHP Stack trace:
+[Wed Aug 03 21:07:37.702846 2016] [:error] [pid 1812] [client 127.0.0.1:54780] PHP   1. {main}() /home/evgen/www/test/OOP/patterns/observer/test.php:0
+[Wed Aug 03 21:10:33.987128 2016] [:error] [pid 1811] [client 127.0.0.1:54784] PHP Fatal error:  Interface 'OOP\\patterns\\observer\\IJournal' not found in /home/evgen/www/test/OOP/patterns/observer/Journal.php on line 3
+[Wed Aug 03 21:10:33.987238 2016] [:error] [pid 1811] [client 127.0.0.1:54784] PHP Stack trace:
+[Wed Aug 03 21:10:33.987269 2016] [:error] [pid 1811] [client 127.0.0.1:54784] PHP   1. {main}() /home/evgen/www/test/OOP/patterns/observer/Journal.php:0
+[Wed Aug 03 21:15:00.832800 2016] [:error] [pid 3872] [client 127.0.0.1:54791] PHP Fatal error:  Class 'OOP\\patterns\\observer\\Journal' not found in /home/evgen/www/test/OOP/patterns/observer/test.php on line 19
+[Wed Aug 03 21:15:00.832885 2016] [:error] [pid 3872] [client 127.0.0.1:54791] PHP Stack trace:
+[Wed Aug 03 21:15:00.832901 2016] [:error] [pid 3872] [client 127.0.0.1:54791] PHP   1. {main}() /home/evgen/www/test/OOP/patterns/observer/test.php:0

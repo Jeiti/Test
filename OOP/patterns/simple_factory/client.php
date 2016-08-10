@@ -6,7 +6,6 @@ use \Core\SimpleFactory;
 function globalAutoload($classname){
     $classname = str_replace("\\","/",$classname);
     $filename = "$classname.php";
-    echo $filename;
     if(file_exists($filename)){
         require_once ($filename);
     }
